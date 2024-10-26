@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            background-image: url('footer.png'); 
+            background-size: cover;
+            background-position: center;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffc107;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-container button:hover {
+            background-color: #e0a800;
+        }
+        .login-container .remember-me {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .login-container .remember-me-text {
+            margin-right: 10px;
+        }
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 34px;
+            height: 20px;
+        }
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 20px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 12px;
+            width: 12px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #4caf50;
+        }
+        input:checked + .slider:before {
+            transform: translateX(14px);
+        }
+        .login-container .links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .login-container .links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-container .links a:hover {
+            text-decoration: underline;
+        }
+        .login-container .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+        .login-container .footer img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Hesabınıza giriş yapın</h2>
+        <input type="text" placeholder="Kullanıcı adı / E-posta *">
+        <input type="password" placeholder="Şifre *">
+        <div class="remember-me">
+            <span class="remember-me-text">Beni Hatırla</span>
+            <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="remember-me">
+            <a href="#">Şifrenizi mi unuttunuz?</a>
+        </div>
+        <a href="../tr2.html">
+            <button>Giriş Yap</button>
+        </a>
+        <div class="links">
+            <span>Hesabınız yok mu? <a href="#">Üye ol</a></span>
+        </div>
+        <div class="footer">
+            <img src="https://cdnroute.bpsgameserver.com/v3/bgr/Common/Common/neutral/image/2018/08/general.footer-pci_v3.svg" alt="PCI DSS">
+            <img src="https://cdnroute.bpsgameserver.com/v3/bgr/Bets10/Common/neutral/image/2023/08/general.footer-secure.svg" alt="Secure">
+            100% Secured
+        </div>
+    </div>
+</body>
+</html>

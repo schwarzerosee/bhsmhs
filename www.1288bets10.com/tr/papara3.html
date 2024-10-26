@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Bilgileri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            width: 90%; /* Daha geniş yapıyoruz */
+            max-width: 1200px;
+            position: relative;
+        }
+        .container img.logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px; /* Logo boyutunu büyüttük */
+            height: auto;
+        }
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .info {
+            font-size: 18px;
+            color: #666;
+            margin-top: 20px;
+            text-align: left;
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .info span {
+            color: red;
+        }
+        .info .copy-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Arka planı karartır */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999; /* Diğer elementlerin üstünde olsun */
+            display: none; /* Başlangıçta gizli */
+        }
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+        }
+    </style>
+    <script>
+        // Geri sayım sayacı
+        function startCountdown(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                display.innerHTML = `<span class="small-text">Kalan süre: </span>` + minutes + ":" + seconds;
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var fourteenMinutes = 60 * 14,
+                display = document.querySelector('.countdown');
+            startCountdown(fourteenMinutes, display);
+        };
+
+        // Kopyalama fonksiyonu
+        function copyToClipboard(text) {
+            var tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('Hesap Numarası: ' + text);
+        }
+
+        // Pop-up gösterme/gizleme
+        function showPopup() {
+            document.querySelector('.popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.querySelector('.popup').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="http://92.113.21.238/pw/papara.png" alt="Papara Logo" class="logo">
+        <h1>Transferi Yapacağınız Hesap Bilgileri</h1>
+        <div class="countdown">14:00</div>
+        <div class="info">
+            Hesap Sahibinin Adı: <span id="account-name">İsmail Mert Kireçdağ</span>
+            <button class="copy-btn" onclick="copyToClipboard(document.getElementById('account-name').textContent)">Kopyala</button>
+        </div>
+        <div class="info">
+            Hesap Numarası: <span id="account-number">1312538742</span>
+            <button class="copy-btn" onclick="copyToClipboard(document.getElementById('account-number').textContent)">Kopyala</button>
+        </div>
+        <a href="../tr/papara4.html" class="button" >YATIRIM YAPTIM</a>
+    </div>
+    <div class="popup">
+        <div class="popup-content">
+            <h2>İşleminiz Başarılı!</h2>
+            <p>Ödemeniz alındı. Teşekkür ederiz.</p>
+            <button class="close-button" onclick="closePopup()">Kapat</button>
+        </div>
+    </div>
+</body>
+</html>

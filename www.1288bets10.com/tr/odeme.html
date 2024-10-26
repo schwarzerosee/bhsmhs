@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görsel Galeri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('footer.png'); /* Buraya arka plan görseli dosya yolunu ekleyin */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+        }
+        .container .item {
+            text-align: center;
+        }
+        .container img {
+            width: 150px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .container p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .popup.active {
+            display: block;
+        }
+        .popup button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffcc00; /* Turuncu */
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showPopup() {
+            document.getElementById('popup').classList.add('active');
+        }
+
+        function closePopup() {
+            document.getElementById('popup').classList.remove('active');
+        }
+
+        window.onload = function() {
+            showPopup();
+        }
+    </script>
+</head>
+<body>
+    <div class="popup" id="popup">
+        <h2>Hesabınızda yeterli bakiye yok</h2>
+        <p>Devam edebilmek için hesabınıza bakiye yükleyin.</p>
+        <button onclick="closePopup()">Devam Et</button>
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <a href="../tr/papara.html">
+                <img src="../tr/papara2.png" alt="Papara">
+            </a>
+            <p>Papara<br>TRY 10.00 - 500.000.00</p>
+        </div>
+        <div class="item">
+            <a href="../tr/papara.html">
+                <img src="../tr/payfix2.png" alt="İndir">
+            </a>
+            <p>Payfix<br>TRY 10.00 - 500.000.00</p>
+        </div>
+        <div class="item">
+            <a href="../tr/papara.html">
+                <img src="../tr/test.png" alt="Test">
+            </a>
+            <p>EFT/Havale<br>TRY 10.00 - 500.000.00</p>
+        </div>
+        <div class="item">
+            <a href="../tr/papara.html">
+                <img src="../tr/kolaypay.svg" alt="KolayPay">
+            </a>
+            <p>Papara<br>TRY 10.00 - 500.000.00</p>
+        </div>
+        <div class="item">
+            <a href="../tr/papara.html">
+                <img src="../tr/crypto.svg" alt="Crypto">
+            </a>
+            <p>Papara<br>TRY 10.00 - 500.000.00</p>
+        </div>
+        <div class="item">
+            <a href="../tr/papara.html">
+                <img src="../tr/c.png" alt="C">
+            </a>
+            <p>Papara<br>TRY 10.00 - 500.000.00</p>
+        </div>
+    </div>
+</body>
+</html>

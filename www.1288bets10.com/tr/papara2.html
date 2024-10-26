@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatırım Sayfası</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            width: 90%; /* Daha geniş yapıyoruz */
+            max-width: 1200px;
+            position: relative;
+        }
+        .container img.logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px; /* Logo boyutunu büyüttük */
+            height: auto;
+        }
+        h1 {
+            color: #333;
+            font-size: 28px; /* Başlık boyutunu büyüttük */
+            margin-bottom: 20px;
+        }
+        .input-container {
+            margin-bottom: 20px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 18px; /* Input alanını büyüttük */
+        }
+        .button {
+            background-color: #ffcc00;
+            color: white;
+            padding: 15px 30px; /* Buton boyutunu büyüttük */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #e0a800;
+        }
+        .note {
+            background-color: #e0f7fa; /* Açık mavi */
+            padding: 15px; /* Not alanını büyüttük */
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #666;
+        }
+        .note span {
+            color: red; /* Rakamların rengi */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="http://92.113.21.238/pw/papara.png" alt="Papara Logo" class="logo">
+        <h1>Yatırım Tutarı</h1>
+        <div class="input-container">
+            <input type="number" placeholder="Yatırım Tutarı 0,00 TL">
+        </div>
+        <a href="../tr/papara3.html" class="button">DEVAM ET</a>
+        <p class="note">Girebileceğiniz yatırım limitiniz en az <span>50,00 TL</span> en fazla <span>100.000,00 TL</span> arasında olabilir. Yatırım miktarınızı girdikten sonra açılacak olan ekranda sizden istenen bilgileri giriniz.</p>
+    </div>
+</body>
+</html>
