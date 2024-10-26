@@ -1,0 +1,1 @@
+import{s}from"./p-a2644f59.js";const o=async o=>{s(o),import("./app-horse-racing-fcc48793.esm.js")};export{o as moduleFactory}

@@ -1,0 +1,358 @@
+@font-face {
+	font-family: "Geogrotesque";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Geogrotesque Bold"),
+		local("Geogrotesque-Bold"),
+		url("Geogrotesque-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "IBMPlexSans";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local("IBMPlexSans SemiBold"),
+		local("IBMPlexSans-SemiBold"),
+		url("IBMPlexSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Mediator Narrow";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Mediator Narrow Regular"),
+		local("MediatorNarrow-Regular"),
+		url("MediatorNarrow-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Roboto Regular"),
+		local("Roboto-Regular"),
+		url("roboto-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local("Roboto Medium"),
+		local("Roboto-Medium"),
+		url("roboto-medium.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Roboto Bold"),
+		local("Roboto-Bold"),
+		url("Roboto-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Open Sans Regular"),
+		local("OpenSans-Regular"),
+		url("opensans-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local("Open Sans Medium"),
+		local("OpenSans-Medium"),
+		url("opensans-semibold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Open Sans Bold"),
+		local("OpenSans-Bold"),
+		url("opensans-bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Outfit Regular"),
+		local("Outfit-Regular"),
+		url("outfit-regular.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Outfit Bold"),
+		local("Outfit-Bold"),
+		url("outfit-bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Museo Sans";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Museo Sans 300"),
+		local("MuseoSans-300"),
+		url("museosans-300.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Museo Sans";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local("Museo Sans 500"),
+		local("MuseoSans-500"),
+		url("museosans-500.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Museo Sans";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Museo Sans 700"),
+		local("MuseoSans-700"),
+		url("museosans-700.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Proxima Nova Regular"),
+		local("proxima_nova_regular-webfont"),
+		url("proximanova-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local("Proxima Nova Medium"),
+		local("proxima_nova_medium-webfont"),
+		url("proximanova-semibold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Proxima Nova Bold"),
+		local("proxima_nova_bold-webfont"),
+		url("proximanova-bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Proxima Nova";
+	font-style: normal;
+	font-weight: 900;
+	src:
+		local("Proxima Nova Black"),
+		local("proxima_nova_black-webfont"),
+		url("proximanova-black.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Noto Serif";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("NotoSerif-Regular"),
+		local("notoserif-regular-webfont"),
+		url("notoserif-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Noto Serif";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("NotoSerif-Bold"),
+		local("notoserif-bold-webfont"),
+		url("notoserif-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Relay";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Relay Regular"),
+		local("relay_regular-webfont"),
+		url("Relay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Relay";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local("Relay Medium"),
+		local("relay_medium-webfont"),
+		url("Relay-Medium.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Relay";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Relay Bold"),
+		local("relay_bold-webfont"),
+		url("Relay-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Cooper Std";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("CooperBlack"),
+		local("CooperBlack"),
+		url("CooperBlack.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Montserrat-Regular"),
+		local("montserrat-regular"),
+		url("Montserrat-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Montserrat-Bold"),
+		local("montserrat-bold"),
+		url("Montserrat-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("poppins-regular"),
+		local("poppins-regular"),
+		url("poppins-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local("poppins-medium"),
+		local("poppins_medium"),
+		url("poppins-semibold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Funkis";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Funkis Regular"),
+		local("funkis_regular-webfont"),
+		url("funkis-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Funkis";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Funkis Bold"),
+		local("funkis_bold-webfont"),
+		url("funkis-bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Muli";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Muli Regular"),
+		local("Muli-Regular"),
+		url("muli-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Muli";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Muli Bold"),
+		local("Muli-Bold"),
+		url("muli-bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Neutraface Condensed";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("neutraface-condensed-bold"),
+		local("neutraface-condensed-bold"),
+		url("neutraface-condensed-bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Lato"),
+		local("Lato"),
+		url("Lato-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Lato"),
+		local("Lato"),
+		url("Lato-Bold.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Fredoka One";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Fredoka One"),
+		local("Fredoka One"),
+		url("Fredoka-Bold.woff2") format("woff2");
+}
